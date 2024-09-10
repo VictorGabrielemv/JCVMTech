@@ -8,6 +8,9 @@
     <style><%@include file="../../../assets/css/jcvm.css"%></style>
     <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"></script>
     <script>
+    
+    
+    
         function toggleDropdown(dropdownId) {
             // Get all dropdowns
             const dropdowns = document.querySelectorAll('.dropdown-menu');
@@ -49,7 +52,7 @@
             <a href="home"
                 class="flex items-center uppercase tracking-estatium p-0 text-2xl text-blazeOrange group">
                 <%@include file="../../../assets/img/TextilTech-SVG.jsp"%>
-                <span class="ml-0 font-extrabold">Textil Tech</span>
+                <span class="ml-0 font-extrabold">JCVM</span>
             </a>
 
             <!-- Sidebar Menu -->
@@ -102,7 +105,7 @@
                             <a href="cadastro-norma"
                                 class="flex items-center p-2 text-base text-blazeOrange bg-peach hover:bg-white group transition duration-300">
                                 <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="12" fill="#133a59" />
+                                    <circle cx="12" cy="12" r="12" fill="#1a474a" />
                                 </svg>
                                 <span class="ml-3 font-semibold">Adicionar Matéria Prima</span>
                             </a>
@@ -111,7 +114,7 @@
                             <a href="normas"
                                 class="flex items-center p-2 text-base text-blazeOrange bg-peach hover:bg-white group transition duration-300">
                                 <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="12" fill="#133a59" />
+                                    <circle cx="12" cy="12" r="12" fill="#1a474a" />
                                 </svg>
                                 <span class="ml-3 font-semibold">Visualizar Matéria prima</span>
                             </a>
