@@ -46,13 +46,16 @@ public class Maquina implements Serializable {
 	@Column(name = "capacidade_operacao", length = 65, nullable = true)
 	private String capacidadeOperacao;
 	
+	@Column(name = "localizacao", length = 65, nullable = true)
+	private String localizacao;
+	
 	@Column(name = "nivel_perigo", length = 65, nullable = true)
 	private String nivelPerigo;
 
 	public Maquina () {}
 	
 	public Maquina(String nome, String tipo, String descricao, String funcionamento, LocalTime horarioInicioOperacao,
-			LocalTime horarioFechamentoOperacao, String capacidadeOperacao, String nivelPerigo) {
+			LocalTime horarioFechamentoOperacao, String capacidadeOperacao, String nivelPerigo, String localizacao) {
 		super();
 		this.nome = nome;
 		this.tipo = tipo;
@@ -62,6 +65,15 @@ public class Maquina implements Serializable {
 		this.horarioFechamentoOperacao = horarioFechamentoOperacao;
 		this.capacidadeOperacao = capacidadeOperacao;
 		this.nivelPerigo = nivelPerigo;
+		this.localizacao = localizacao;
+	}
+
+	public String getLocalizacao() {
+		return localizacao;
+	}
+
+	public void setLocalizacao(String localizacao) {
+		this.localizacao = localizacao;
 	}
 
 	public Long getId() {
