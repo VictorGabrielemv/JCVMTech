@@ -76,12 +76,15 @@ public class Servlet extends HttpServlet {
 			case "/visualizar-maquinas":
 				mostrarMaquinas(request, response);
 				break;
+				
+			case "/localizar-maquinas":
+				mostrarLocalizarMaquinas(request, response);
+				break;
 
 			case "/perfil-maquina":
 				mostrarPerfilMaquina(request, response);
 				break;
 				
-
 			case "/login":
 				mostrarLogin(request, response);
 				break;
@@ -172,6 +175,16 @@ public class Servlet extends HttpServlet {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("assets/visualizar-maquinas.jsp");
 		dispatcher.forward(request, response);
 	}
+	
+	private void mostrarLocalizarMaquinas(HttpServletRequest request, HttpServletResponse response)
+			throws SQLException, IOException, ServletException {
+
+		List<Maquina> maquinas = maquinaDAO.buscarMaquinas();
+		request.setAttribute("maquinas", maquinas);
+
+		RequestDispatcher dispatcher = request.getRequestDispatcher("assets/localizar-maquinas.jsp");
+		dispatcher.forward(request, response);
+	}
 
 
 	private void logar(HttpServletRequest request, HttpServletResponse response)
@@ -209,10 +222,11 @@ public class Servlet extends HttpServlet {
 
 		String capacidadeOperacao = request.getParameter("capacidadeOperacao");
 		String nivelPerigo = request.getParameter("nivelPerigo");
+		String capacidadeOperacao = request.getParameter("localizacao");
 
 		// insere no banco de dados
 		maquinaDAO.inserirMaquina(new Maquina(nome, tipo, descricao, funcionamento, horarioInicioOperacao,
-				horarioFechamentoOperacao, capacidadeOperacao, nivelPerigo));
+				horarioFechamentoOperacao, capacidadeOperacao, nivelPerigo, localizacao));
 
 		response.sendRedirect("home");
 	}

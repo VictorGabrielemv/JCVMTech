@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Textil Tech | Tech Master</title>
+    <title>JCVM Tech | Tech Master</title>
     <link rel="icon" type="image/x-icon" href="../../../assets/img/TextilTech-SVG.jsp">
     <style><%@include file="../../../assets/css/jcvm.css"%></style>
     <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"></script>
@@ -76,19 +76,28 @@
                         <li>
                             <a href="cadastro-maquina"
                                 class="flex items-center p-2 text-base text-blazeOrange bg-peach hover:bg-white group transition duration-300">
-                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="12" fill="#133a59" />
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="#1a474a" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="12" fill="#1a474a" />
                                 </svg>
                                 <span class="ml-3 font-semibold">Adicionar Máquinas</span>
                             </a>
                         </li>
                         <li>
-                            <a href="maquinas"
+                            <a href="localizar-maquinas"
                                 class="flex items-center p-2 text-base text-blazeOrange bg-peach hover:bg-white group transition duration-300">
                                 <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="12" fill="#133a59" />
-                                </svg>
+                                    <circle cx="12" cy="12" r="12" fill="#1a474a" />
+                                </svg>	
                                 <span class="ml-3 font-semibold">Visualizar Máquinas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="localizar-maquinas"
+                                class="flex items-center p-2 text-base text-blazeOrange bg-peach hover:bg-white group transition duration-300">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="12" fill="#1a474a" />
+                                </svg>
+                                <span class="ml-3 font-semibold">Localizar Máquinas</span>
                             </a>
                         </li>
                     </ul>
